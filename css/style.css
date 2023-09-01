@@ -1,0 +1,99 @@
+/*
+selector{propiedad: valor;}
+jerarquia: |  !important  | estilos en linea | id | class  pseudoclases   atributo | elemento pseudoelemento |*/
+/*
+* - Selector universal
+:nombre etiqueta: - Selector por elemento
+.:nombre clase: - Selector por clase
+:#nombre id: - Selector por id
+[:nombre atributo: = :valor:] - Selector por atributo (el atributo y valor pueden ser inventados)
+:nombre etiqueta madre: :nombre etiqueta hija: - Selector por descendencia
+.:nombre clase: :nombre etiqueta hija: - Selector por descendencia
+:nombre etiqueta: :nmobre pseudo-clase: - Selector por pseudo clase
+*/
+/*
+Box Model:
+content (line-height), padding, border, margin
+*/
+
+
+
+/**/
+:root{
+    --theme-color: white;
+    --theme2-color: #f8f9fa;
+    --primary-color: #469b9b/* #69b3a2 */;
+    --secondary-color: #bffde8/*#F7C331*/;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* .observer-root-margin{
+    pointer-events: none;
+    z-index: 10000;
+    border: 4px solid blue;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50vh;
+} */
+
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#canvas1{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-content{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+
+@media (min-width: 1024px) {
+    .horizontal-padding{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .vertical-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
