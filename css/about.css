@@ -140,15 +140,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 30px;
+        column-gap: 100px;
     }
 
     .skills .icon .tooltip{
-        right: -70px;
+        right: -120px;
+        /* opacity: 1; */
     }
     
     .skills .icon:hover .tooltip{
         opacity: 1;
-        right: -70px;
+        right: -120px;
         bottom: 10px;
     }
 
@@ -160,12 +162,12 @@
     /*tooltip para la columna derecha*/
     .skills .excel .tooltip, .skills .sql .tooltip, .skills .css .tooltip, .skills .tableau .tooltip{
         right: auto;
-        left: -50px;
+        left: -120px;
     }
     
     .skills .excel:hover .tooltip, .skills .sql:hover .tooltip, .skills .css:hover .tooltip, .skills .tableau:hover .tooltip{
         right: auto;
-        left: -50px;
+        left: -120px;
     }
 
     .skills .excel .tooltip::before, .skills .sql .tooltip::before, .skills .css .tooltip::before, .skills .tableau .tooltip::before{ /*rombo*/
